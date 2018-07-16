@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/2/3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/2/4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/2/5.png">
-<meta property="og:updated_time" content="2018-05-08T13:57:42.914Z">
+<meta property="og:updated_time" content="2018-07-15T07:45:05.695Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="assignment2 [Transformations &amp; Additional Primitives]">
 <meta name="twitter:description" content="加入平面和三角形，加入放射变换，加入透视相机。对于放射变换的法线可视化。以及漫反射光照。">
@@ -440,7 +440,7 @@
       
         <p>加入平面和三角形，加入放射变换，加入透视相机。<br>对于放射变换的法线可视化。<br>以及漫反射光照。</p>
 <a id="more"></a>
-<h1 id="assignment-2"><a href="#assignment-2" class="headerlink" title="assignment 2"></a>assignment 2</h1><p>我觉得涉及的知识点都不难但是一个线代不好的人硬生生写的快炸毛了……<br>一开始觉得变换都写好了应该不难。但是后面，主要是变换……<br>然后调出来上一个assignment的很多个问题。  </p>
+<h1 id="assignment-2"><a href="#assignment-2" class="headerlink" title="assignment 2"></a>assignment 2</h1><p>我觉得涉及的知识点都不难但是一个线代不好的人硬生生写的快炸毛了……<br>一开始觉得变换都写好了应该不难。但是后面，变换写错之后总是跑到屏幕外面……面对空荡荡的图不知道如何debug……<br>然后调出来上一个assignment的很多个问题。  </p>
 <h2 id="BUG日志"><a href="#BUG日志" class="headerlink" title="BUG日志"></a>BUG日志</h2><ol>
 <li>鱼眼镜头的话插值是对角度进行插值，而正常的透视镜头需要对投影平面上的点。 </li>
 <li>透视相机的生成我可能大概或许还是写错了……<br>一开始觉得非常的不可理喻（因为那个角度很奇怪），后来发现可能就是比较方便测量吧。</li>
@@ -448,7 +448,7 @@
 <li>然后还是上面那个图，要么是深度的定义出问题了要么是透视相机的问题，最后的深度图不是非常符合。</li>
 <li>平面的法线正负无法确定，用隐式定义的话根本看不出法线啊喂……  </li>
 <li>然后是三角形正反面的确定，这里是按照顺时针为正。  </li>
-<li>最后是求变换后的矩阵的法向量，如果用齐次坐标的话好似无法确定方向？求出来的法线好几次出现想法的情况。然后最后结果是直接舍弃了第四维……不知道算其他的东西的时候会不会出错</li>
+<li>最后是求变换后的矩阵的法向量，如果用齐次坐标的话好似无法确定方向？求出来的法线好几次出现相反的情况。然后最后结果是直接舍弃了第四维……不知道算其他的东西的时候会不会出错</li>
 </ol>
 <p>综上所述一堆bug……  </p>
 <h3 id="实现内容"><a href="#实现内容" class="headerlink" title="实现内容"></a>实现内容</h3><p>实现了一下射线和平面求交以及射线和三角形求交，用的是上次那篇笔记里的方法。<br>一个很重要的是Normal Transformation，法线在仿射空间的变换和正常的不一样。这个例程确实解决了我对Transformation的理解上的一些坎。<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/2/2.png" alt="">  </p>
@@ -497,6 +497,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/15/MIT-6-837/assignment3/" rel="prev" title="assignment3 [ OpenGL & Phong Shading]">
+                assignment3 [ OpenGL & Phong Shading] <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -587,7 +591,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
