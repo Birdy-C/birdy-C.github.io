@@ -79,24 +79,23 @@
 
 
 
-<meta name="description" content="很简单的球的Ray Casting。是一个大的项目的基础部分，所以起整体的框架起了很久。感觉结构清楚的代码看起来很舒服。">
+<meta name="description" content="在之前的项目中加入OpenGL API来实现场景交互（相机相应鼠标事件）。实现Phong model。">
 <meta name="keywords" content="CG">
 <meta property="og:type" content="article">
-<meta property="og:title" content="assignment1 [Ray Casting]">
-<meta property="og:url" content="https://birdy-c.github.io/2018/04/22/MIT-6-837/assignment1/index.html">
+<meta property="og:title" content="assignment3 [ OpenGL &amp; Phong Shading]">
+<meta property="og:url" content="https://birdy-c.github.io/2018/07/15/MOOC/MIT-6-837/assignment3/index.html">
 <meta property="og:site_name" content="Birdcage">
-<meta property="og:description" content="很简单的球的Ray Casting。是一个大的项目的基础部分，所以起整体的框架起了很久。感觉结构清楚的代码看起来很舒服。">
+<meta property="og:description" content="在之前的项目中加入OpenGL API来实现场景交互（相机相应鼠标事件）。实现Phong model。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/4.png">
-<meta property="og:updated_time" content="2018-07-04T11:41:50.533Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/0.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/3.png">
+<meta property="og:updated_time" content="2018-07-16T06:53:17.603Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="assignment1 [Ray Casting]">
-<meta name="twitter:description" content="很简单的球的Ray Casting。是一个大的项目的基础部分，所以起整体的框架起了很久。感觉结构清楚的代码看起来很舒服。">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/1.png">
+<meta name="twitter:title" content="assignment3 [ OpenGL &amp; Phong Shading]">
+<meta name="twitter:description" content="在之前的项目中加入OpenGL API来实现场景交互（相机相应鼠标事件）。实现Phong model。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/0.png">
 
 
 
@@ -126,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://birdy-c.github.io/2018/04/22/MIT-6-837/assignment1/"/>
+  <link rel="canonical" href="https://birdy-c.github.io/2018/07/15/MOOC/MIT-6-837/assignment3/"/>
 
 
 
 
 
-  <title>assignment1 [Ray Casting] | Birdcage</title>
+  <title>assignment3 [ OpenGL & Phong Shading] | Birdcage</title>
   
 
 
@@ -316,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://birdy-c.github.io/2018/04/22/MIT-6-837/assignment1/">
+    <link itemprop="mainEntityOfPage" href="https://birdy-c.github.io/2018/07/15/MOOC/MIT-6-837/assignment3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Birdy">
@@ -333,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">assignment1 [Ray Casting]</h1>
+          <h1 class="post-title" itemprop="name headline">assignment3 [ OpenGL & Phong Shading]</h1>
         
 
         <div class="post-meta">
@@ -345,8 +344,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-22T23:56:01+08:00">
-                2018-04-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-15T15:40:12+08:00">
+                2018-07-15
               </time>
             
 
@@ -397,9 +396,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/22/MIT-6-837/assignment1/#comments" itemprop="discussionUrl">
+                <a href="/2018/07/15/MOOC/MIT-6-837/assignment3/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/04/22/MIT-6-837/assignment1/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/07/15/MOOC/MIT-6-837/assignment3/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -407,7 +406,7 @@
 
           
           
-             <span id="/2018/04/22/MIT-6-837/assignment1/" class="leancloud_visitors" data-flag-title="assignment1 [Ray Casting]">
+             <span id="/2018/07/15/MOOC/MIT-6-837/assignment3/" class="leancloud_visitors" data-flag-title="assignment3 [ OpenGL & Phong Shading]">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -438,25 +437,17 @@
       
 
       
-        <p>很简单的球的Ray Casting。<br>是一个大的项目的基础部分，所以起整体的框架起了很久。<br>感觉结构清楚的代码看起来很舒服。  </p>
+        <p>在之前的项目中加入OpenGL API来实现场景交互（相机相应鼠标事件）。<br>实现Phong model。</p>
 <a id="more"></a>
-<h1 id="assignment-1"><a href="#assignment-1" class="headerlink" title="assignment 1"></a>assignment 1</h1><p>从这个项目来说涉及的知识点不多，Ray Casting和圆与射线相交的检测。<br>但是课件上的点还是蛮多的……</p>
-<p>这个作业主要花时间的是把C++快忘光的以及基本自己没怎么实现过的部分部分重新熟悉了一下，还有就是目测后面的代码会在这个的基础上进一步构造所以感觉会比较复杂。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="Ray-Casting"><a href="#Ray-Casting" class="headerlink" title="Ray Casting"></a>Ray Casting</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">For every pixel</span><br><span class="line">	Construct a ray from the eye</span><br><span class="line">	For every object in the scene</span><br><span class="line">		Find intersection with the ray</span><br><span class="line">		Keep if closest</span><br><span class="line">	Shade depending on light and normal vector</span><br></pre></td></tr></table></figure>
-<h3 id="补"><a href="#补" class="headerlink" title="补"></a>补</h3><p>写assignment2的时候觉得这个作业简直是在写BUGS……<br>距离判断有问题，相机的size的精度有问题……<br>有时间再补吧orz  </p>
-<h2 id="一些模型"><a href="#一些模型" class="headerlink" title="一些模型"></a>一些模型</h2><h3 id="光线的显式定义"><a href="#光线的显式定义" class="headerlink" title="光线的显式定义"></a>光线的显式定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">P(t) = R_0 + t*R_d</span><br></pre></td></tr></table></figure>
-<h3 id="平面的隐式定义"><a href="#平面的隐式定义" class="headerlink" title="平面的隐式定义"></a>平面的隐式定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">H(P) = Ax+By+Cz  </span><br><span class="line"></span><br><span class="line">=nP+D=0</span><br></pre></td></tr></table></figure>
-<h4 id="平面与光线求交"><a href="#平面与光线求交" class="headerlink" title="平面与光线求交"></a>平面与光线求交</h4><p><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/1.png" alt="">  </p>
-<p><a href="https://en.wikipedia.org/wiki/Line%E2%80%93plane_intersection" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Line%E2%80%93plane_intersection</a></p>
-<h3 id="球面的隐式定义"><a href="#球面的隐式定义" class="headerlink" title="球面的隐式定义"></a>球面的隐式定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H(P) = P*P-r^2 = 0</span><br></pre></td></tr></table></figure>
-<p>这里中点在坐标轴原点  </p>
-<p>需要考虑到视点是否在球面内</p>
-<h4 id="代数求交"><a href="#代数求交" class="headerlink" title="代数求交"></a>代数求交</h4><p><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/2.png" alt=""></p>
-<h4 id="几何求交以及两种方法比较"><a href="#几何求交以及两种方法比较" class="headerlink" title="几何求交以及两种方法比较"></a>几何求交以及两种方法比较</h4><p><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/3.png" alt=""></p>
-<h2 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h2><p><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/5.png" alt=""></p>
-<h2 id="多边形"><a href="#多边形" class="headerlink" title="多边形"></a>多边形</h2><p>先与平面求交，再求这个点是不是在多边形内。<br>点在多边形内常用检测<br><a href="https://en.wikipedia.org/wiki/Point_in_polygon" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Point_in_polygon</a></p>
-<h2 id="三角形"><a href="#三角形" class="headerlink" title="三角形"></a>三角形</h2><p>三角形也可以采用重心的格式。这里提出了一种重心坐标下的表示方法。<br>看起来介绍的是下面这种复杂的算法<br><a href="https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm</a><br><a href="https://lisabug.github.io/2015/05/01/Ray-tracer-triangle-intersection/" target="_blank" rel="noopener">https://lisabug.github.io/2015/05/01/Ray-tracer-triangle-intersection/</a></p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>显式曲面&amp;隐式曲面<br>前者可以方便的生成点，后者可以方便的检测一个点是不是在曲面上<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/1/4.png" alt=""></p>
+<h1 id="assignment-3"><a href="#assignment-3" class="headerlink" title="assignment 3"></a>assignment 3</h1><p>这次还好吧比较常规……可能最麻烦的是配OpenGL？<br>依然是固定管线……想尝试一下可编程管线……<br>不过这个assignment里，最主要的不是OpenGL的实现。OpenGL只是提供一个交互，以及可以比较一下判断Phong Shading有没有写对。</p>
+<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p>吐槽一下camera_additions.txt这个文档为啥没有换行哇……<br>环境光的材质和漫射光的材质一样。如果计算shader的时候要直接返回颜色的话，还要多传入一个环境光的参数。<br>哦然后反正一开始的问题是配OpenGL……glut.h 与stdlib.h中的exit()重定义问题之类的。<br>文件打不开可以先用fprintf(stderr, “%s \n”,strerror(errno));检查路径。<br>还有这个作业确实有点早……OpenGL居然有不自带画球方法的时候（惊了）<br>还有就是法线方向了、一开始以为正方体显示的时候几个全黑的面是法线设置反了，后来想了想鼠标动的是相机位置所以对于背向水平入射光的方向是一直保持黑色的。<br>还有我一开始输出的图像是倒的……之前写的时候重新计算up有问题。<br>PhongMaterial::Shade这个函数不需要计入环境光，因为可能有多盏灯啊环境光算一次就够了！<br>可以设置glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, zero);来单独测试每个光线。</p>
+<p>一开始我写错Phong的种类了，写了原始的形式。normal会比Blinn-Torrance要暗……其他也没啥感觉……</p>
+<p>最后不知道什么是高光修正？</p>
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p>这一次的课件是从分析Ray Casting / Tracing 的优缺点出发，引出了Rendering Pipline。<br>介绍了渲染管线的整个流程之后，重点介绍了Clipping和Scan Conversion的一些相关算法。 </p>
+<p>Ray Casting / Tracing 的优缺点<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/0.png" alt=""> </p>
+<p>渲染管线介绍<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/1.png" alt=""><br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/2.png" alt=""> </p>
+<p>线段的裁剪，比如Outcodes.<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/3/3.png" alt=""><br> Polygon clipping，主要就是Walking rules。<br>基本的光栅化，比如bresenham’s algorithm</p>
+<p>以及一些反走样的介绍。</p>
 
       
     </div>
@@ -487,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/20/MIT-6-837/assignment0/" rel="next" title="assignment0 [Iterated Function Systems]">
-                <i class="fa fa-chevron-left"></i> assignment0 [Iterated Function Systems]
+              <a href="/2018/05/07/MOOC/MIT-6-837/assignment2/" rel="next" title="assignment2 [Transformations & Additional Primitives]">
+                <i class="fa fa-chevron-left"></i> assignment2 [Transformations & Additional Primitives]
               </a>
             
           </div>
@@ -497,8 +488,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/07/MIT-6-837/assignment2/" rel="prev" title="assignment2 [Transformations & Additional Primitives]">
-                assignment2 [Transformations & Additional Primitives] <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/16/MOOC/MIT-6-837/assignment4/" rel="prev" title="assignment4[Shadows, Reflection & Refraction]">
+                assignment4[Shadows, Reflection & Refraction] <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +581,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -601,7 +592,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -667,7 +658,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#assignment-1"><span class="nav-number">1.</span> <span class="nav-text">assignment 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.1.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ray-Casting"><span class="nav-number">1.1.1.</span> <span class="nav-text">Ray Casting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#补"><span class="nav-number">1.1.2.</span> <span class="nav-text">补</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些模型"><span class="nav-number">1.2.</span> <span class="nav-text">一些模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#光线的显式定义"><span class="nav-number">1.2.1.</span> <span class="nav-text">光线的显式定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平面的隐式定义"><span class="nav-number">1.2.2.</span> <span class="nav-text">平面的隐式定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#平面与光线求交"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">平面与光线求交</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#球面的隐式定义"><span class="nav-number">1.2.3.</span> <span class="nav-text">球面的隐式定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#代数求交"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">代数求交</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#几何求交以及两种方法比较"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">几何求交以及两种方法比较</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子"><span class="nav-number">1.3.</span> <span class="nav-text">盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多边形"><span class="nav-number">1.4.</span> <span class="nav-text">多边形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角形"><span class="nav-number">1.5.</span> <span class="nav-text">三角形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.6.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#assignment-3"><span class="nav-number">1.</span> <span class="nav-text">assignment 3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Log"><span class="nav-number">1.1.</span> <span class="nav-text">Log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型"><span class="nav-number">1.2.</span> <span class="nav-text">模型</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -824,9 +815,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://birdy-c.github.io/2018/04/22/MIT-6-837/assignment1/';
-          this.page.identifier = '2018/04/22/MIT-6-837/assignment1/';
-          this.page.title = 'assignment1 [Ray Casting]';
+          this.page.url = 'https://birdy-c.github.io/2018/07/15/MOOC/MIT-6-837/assignment3/';
+          this.page.identifier = '2018/07/15/MOOC/MIT-6-837/assignment3/';
+          this.page.title = 'assignment3 [ OpenGL & Phong Shading]';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://birdyc.disqus.com/embed.js';

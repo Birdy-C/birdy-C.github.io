@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="杂记," />
+  <meta name="keywords" content="CG," />
 
 
 
@@ -79,18 +79,22 @@
 
 
 
-<meta name="description" content="第一次参加GGJ……被虐成狗吧状态大概是。 unity不熟练，不熟悉游戏的开发，都是很主要的原因，而且个人可能重视程度也不是非常够，这样。 国美小哥哥好厉害啊……我们的程序和策划好厉害呀……闪闪发光的那种。感觉他们因为热爱而努力的样子，都超级值得我尊重啊。 那么回到这个问题，我到底是不是应该走这条路。 印象超级深的程序小哥哥问我会不会写shader，我：我现在学来不来得及……QwQ大概这就是菜吧">
-<meta name="keywords" content="杂记">
+<meta name="description" content="在之前的项目中加入二次光照——现在Ray Caster就算升级为Ray Tracer了！这次实验完成之后模型里就有简单的阴影、反射和折射了。">
+<meta name="keywords" content="CG">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GGJ">
-<meta property="og:url" content="https://birdy-c.github.io/2018/01/30/记录/GGJ/index.html">
+<meta property="og:title" content="assignment4[Shadows, Reflection &amp; Refraction]">
+<meta property="og:url" content="https://birdy-c.github.io/2018/07/16/MOOC/MIT-6-837/assignment4/index.html">
 <meta property="og:site_name" content="Birdcage">
-<meta property="og:description" content="第一次参加GGJ……被虐成狗吧状态大概是。 unity不熟练，不熟悉游戏的开发，都是很主要的原因，而且个人可能重视程度也不是非常够，这样。 国美小哥哥好厉害啊……我们的程序和策划好厉害呀……闪闪发光的那种。感觉他们因为热爱而努力的样子，都超级值得我尊重啊。 那么回到这个问题，我到底是不是应该走这条路。 印象超级深的程序小哥哥问我会不会写shader，我：我现在学来不来得及……QwQ大概这就是菜吧">
+<meta property="og:description" content="在之前的项目中加入二次光照——现在Ray Caster就算升级为Ray Tracer了！这次实验完成之后模型里就有简单的阴影、反射和折射了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-04T11:41:50.534Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_06f_trans.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_14fr.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_14fw.png">
+<meta property="og:updated_time" content="2018-07-18T01:17:49.492Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GGJ">
-<meta name="twitter:description" content="第一次参加GGJ……被虐成狗吧状态大概是。 unity不熟练，不熟悉游戏的开发，都是很主要的原因，而且个人可能重视程度也不是非常够，这样。 国美小哥哥好厉害啊……我们的程序和策划好厉害呀……闪闪发光的那种。感觉他们因为热爱而努力的样子，都超级值得我尊重啊。 那么回到这个问题，我到底是不是应该走这条路。 印象超级深的程序小哥哥问我会不会写shader，我：我现在学来不来得及……QwQ大概这就是菜吧">
+<meta name="twitter:title" content="assignment4[Shadows, Reflection &amp; Refraction]">
+<meta name="twitter:description" content="在之前的项目中加入二次光照——现在Ray Caster就算升级为Ray Tracer了！这次实验完成之后模型里就有简单的阴影、反射和折射了。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_06f_trans.png">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://birdy-c.github.io/2018/01/30/记录/GGJ/"/>
+  <link rel="canonical" href="https://birdy-c.github.io/2018/07/16/MOOC/MIT-6-837/assignment4/"/>
 
 
 
 
 
-  <title>GGJ | Birdcage</title>
+  <title>assignment4[Shadows, Reflection & Refraction] | Birdcage</title>
   
 
 
@@ -310,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://birdy-c.github.io/2018/01/30/记录/GGJ/">
+    <link itemprop="mainEntityOfPage" href="https://birdy-c.github.io/2018/07/16/MOOC/MIT-6-837/assignment4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Birdy">
@@ -327,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">GGJ</h1>
+          <h1 class="post-title" itemprop="name headline">assignment4[Shadows, Reflection & Refraction]</h1>
         
 
         <div class="post-meta">
@@ -339,8 +343,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-30T11:28:25+08:00">
-                2018-01-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-16T15:45:51+08:00">
+                2018-07-16
               </time>
             
 
@@ -362,8 +366,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/轨迹/" itemprop="url" rel="index">
-                    <span itemprop="name">轨迹</span>
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/MIT-6-837/" itemprop="url" rel="index">
+                    <span itemprop="name">MIT-6-837</span>
                   </a>
                 </span>
 
@@ -380,9 +395,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/01/30/记录/GGJ/#comments" itemprop="discussionUrl">
+                <a href="/2018/07/16/MOOC/MIT-6-837/assignment4/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/01/30/记录/GGJ/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/07/16/MOOC/MIT-6-837/assignment4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -390,7 +405,7 @@
 
           
           
-             <span id="/2018/01/30/记录/GGJ/" class="leancloud_visitors" data-flag-title="GGJ">
+             <span id="/2018/07/16/MOOC/MIT-6-837/assignment4/" class="leancloud_visitors" data-flag-title="assignment4[Shadows, Reflection & Refraction]">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -421,12 +436,14 @@
       
 
       
-        <p>第一次参加GGJ……被虐成狗吧状态大概是。</p>
-<p>unity不熟练，不熟悉游戏的开发，都是很主要的原因，而且个人可能重视程度也不是非常够，这样。</p>
-<p>国美小哥哥好厉害啊……我们的程序和策划好厉害呀……闪闪发光的那种。<br>感觉他们因为热爱而努力的样子，都超级值得我尊重啊。</p>
-<p>那么回到这个问题，我到底是不是应该走这条路。</p>
-<p>印象超级深的程序小哥哥问我会不会写shader，我：我现在学来不来得及……<br>QwQ大概这就是菜吧</p>
-<p>觉得做个技术美术也很不错……可我好像从高中戒了游戏的毒之后对于游戏一直是一种（看戏）的状态……而且在思考自己的热情是不是一开始“创造”所带来的新鲜感，而这样的感觉能不能长久的维系下去，自己又适不适合作为一个大型游戏里的一枚螺丝钉。</p>
+        <p>在之前的项目中加入二次光照——现在Ray Caster就算升级为Ray Tracer了！<br>这次实验完成之后模型里就有简单的阴影、反射和折射了。</p>
+<a id="more"></a>
+<h1 id="assignment-4"><a href="#assignment-4" class="headerlink" title="assignment 4"></a>assignment 4</h1><h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p>感觉这次的题特别多——</p>
+<p>weight 那个0.01是干啥的——做到最后也没有加……weight确实应该是有用的，如果考虑到光线衰减的话。比方说在镜子里看到的点光源，衰减应该要考虑到折射前的路程。但是感觉这样算又非常的复杂，因为衰减不是线性的没法简单的通过两段的叠加实现。<br>然后这个值最后还是没有用（……）</p>
+<p>增加transparent_shadows。这个值相当于一个mask，之前是如果有遇到物体就设置为0，不遇到物体是1，然后乘以该光源的颜色。现在变成在0-1之间变换，由引向光源的射线穿透物体的透明属性决定。<br>输出了一下在这次的数据中T的差不多在，0.8以内。<br>觉得算power太麻烦了直接定为线性衰减。T为1的时候，mask和该物体的透明颜色一样。然后看起来和图蛮像的……<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_06f_trans.png" alt="my result"> </p>
+<p>比较丧的一点是，那个钻石的例子我到最后也没有调对，不知道哪里出了问题……或许等做后面的题目了就知道了……摊手<br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_14fr.png" alt="example"><br><img src="https://raw.githubusercontent.com/birdy-C/pic/master/MIT-6-837/4/output4_14fw.png" alt="my result"><br>一个问题是过亮，一个问题是偏红色。<br>如果在发出的射线不和任何物体相交的时候，返回0，那么这里的钻石不会过量，但是前面的一个例子能明显的感觉到不对。<br>然后偏红色那个问题，我脑补了一下觉得蛮对的……</p>
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p>这里一边重新介绍了一下光栅化的方法。包括线和圆，以及确定线段围成的封闭图形。<br>颜色的插值使用重心坐标系。<br>可见性检测的方法——光线投射、画家算法、Z Buffer。Z Buffer 常取倒数。</p>
+<p>提了软影，反走样，Glossy Reflection（有多条反射光线），运动模糊，景深。<br>提到了各种各样的加速结构。包围盒，空间网格化（固定网格，自适应网格（四/八叉树），BVH）。<br>最后提到了把变换合并。</p>
 
       
     </div>
@@ -444,7 +461,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/杂记/" rel="tag"># 杂记</a>
+            <a href="/tags/CG/" rel="tag"># CG</a>
           
         </div>
       
@@ -457,14 +474,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/15/MOOC/MIT-6-837/assignment3/" rel="next" title="assignment3 [ OpenGL & Phong Shading]">
+                <i class="fa fa-chevron-left"></i> assignment3 [ OpenGL & Phong Shading]
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/18/记录/【数学建模】总结 - 2018.2/" rel="prev" title="数学建模总结">
-                数学建模总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/15/杂/趣味题/" rel="prev" title="分享几道题目">
+                分享几道题目 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -527,8 +548,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -547,7 +577,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -558,7 +588,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -614,6 +644,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#assignment-4"><span class="nav-number">1.</span> <span class="nav-text">assignment 4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Log"><span class="nav-number">1.1.</span> <span class="nav-text">Log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型"><span class="nav-number">1.2.</span> <span class="nav-text">模型</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -765,9 +811,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://birdy-c.github.io/2018/01/30/记录/GGJ/';
-          this.page.identifier = '2018/01/30/记录/GGJ/';
-          this.page.title = 'GGJ';
+          this.page.url = 'https://birdy-c.github.io/2018/07/16/MOOC/MIT-6-837/assignment4/';
+          this.page.identifier = '2018/07/16/MOOC/MIT-6-837/assignment4/';
+          this.page.title = 'assignment4[Shadows, Reflection & Refraction]';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://birdyc.disqus.com/embed.js';
