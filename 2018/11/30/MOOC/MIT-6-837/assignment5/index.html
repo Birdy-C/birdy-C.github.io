@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Birdcage">
 <meta property="og:description" content="接下来这两个实验是要是用网格去加速光线跟踪的算法，这个实验里面实现网格化，下一个实验实现加速。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-21T04:13:17.796Z">
+<meta property="og:updated_time" content="2019-06-26T10:31:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="assignment5[Voxel Rendering]">
 <meta name="twitter:description" content="接下来这两个实验是要是用网格去加速光线跟踪的算法，这个实验里面实现网格化，下一个实验实现加速。">
@@ -339,7 +339,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T11:04:53+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T11:04:53-05:00">
                 2018-11-30
               </time>
             
@@ -442,8 +442,15 @@
 <li>Flatten the transformation hierarchy</li>
 </ul>
 <h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p>拖得太久了再次看代码仿佛不是我儿子……</p>
-<p>我的结果好像比他的颜色要深一点，而且背后两个面是黑色的不知道是不是有什么问题。</p>
-<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2>
+<p>我一开始的结果好像比他的颜色要深一点，而且背后两个面是黑色的。后来处理是设置了一下Grid的Material。</p>
+<p><code>itsMaterial = new PhongMaterial(Vec3f(1), Vec3f(0), 0);</code></p>
+<p>并且在绘制之前调用</p>
+<p><code>glSetMaterial();</code></p>
+<p>3DDDA卡了很久。可以参考下面这个链接。</p>
+<p><a href="http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect12p1.html" target="_blank" rel="noopener">http://euklid.mi.uni-koeln.de/c/mirror/www.cs.curtin.edu.au/units/cg351-551/notes/lect12p1.html</a></p>
+<h2 id="课程笔记"><a href="#课程笔记" class="headerlink" title="课程笔记"></a>课程笔记</h2><p>Texture Mapping， 主要就是和纹理相关的内容。如何在透视下保持纹理映射正确、过程式纹理、常见的纹理映射方法（投射、mapping），使用Displacement Mapping、Bump Mapping、Environment Mapping来得到更加逼真的纹理凹凸效果。</p>
+<p>Shadows，介绍了ray tracing中的软阴影，Projective Texture Shadow，Shadow Maps以及Shadow Volumes。</p>
+
       
     </div>
     
@@ -483,8 +490,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/11/30/MOOC/MIT-6-837/assignment6/" rel="prev" title="assignment5[Grid Acceleration & Solid Texture]">
-                assignment5[Grid Acceleration & Solid Texture] <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/04/杂/【数字媒体】数字版权管理与区块链技术融合的可能性分析/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -576,7 +583,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -653,7 +660,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#assignment-5"><span class="nav-number">1.</span> <span class="nav-text">assignment 5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Log"><span class="nav-number">1.1.</span> <span class="nav-text">Log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型"><span class="nav-number">1.2.</span> <span class="nav-text">模型</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#assignment-5"><span class="nav-number">1.</span> <span class="nav-text">assignment 5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Log"><span class="nav-number">1.1.</span> <span class="nav-text">Log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#课程笔记"><span class="nav-number">1.2.</span> <span class="nav-text">课程笔记</span></a></li></ol></li></ol></div>
             
 
           </div>
